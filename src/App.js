@@ -5,6 +5,7 @@ import Client from './Client';
 import Article from './Article';
 import Compteur from './Compteur';
 import Personne from './Personne';
+import Facture from './TP3/Facture';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <Client />
       <Article />
       <Compteur /> */}
-      <Personne />
+      {/* <Personne /> */}
+      <Facture />
     </div>
   );
 }
