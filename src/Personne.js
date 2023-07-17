@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Affichepersonne from "./Affichepersonne"
 
 const Personne = () => {
     const [pers1, setPers1] = useState({
@@ -11,10 +12,11 @@ const Personne = () => {
     }
     return (
         <>
-            <h1>{pers1.nom}</h1>
+            <Affichepersonne pers={pers1} changePers={changePers} />
+            {/* <h1>{pers1.nom}</h1>
             <h2>{pers1.age}</h2>
-            <h2>{pers1.ville}</h2>
-            <button onClick={changePers}>Modifier</button>
+            <h2>{pers1.ville}</h2> */}
+            {/* <button onClick={changePers}>Modifier</button> */}
         </>)
 
 }
