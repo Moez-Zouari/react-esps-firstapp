@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import EnteteFacture from './EnteteFacture';
+import DetailFacture from './DetailFacture';
 
 const Facture = () => {
     const [facture, setFacture] = useState({
@@ -18,7 +19,8 @@ const Facture = () => {
     ]);
     return (
         <div>
-            <EnteteFacture facture={facture} client={client} />
+            <EnteteFacture facture={facture} client={client} />*
+            <DetailFacture articles={articles} />
         </div>
     )
 }
